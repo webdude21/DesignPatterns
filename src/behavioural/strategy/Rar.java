@@ -1,21 +1,10 @@
 package behavioural.strategy;
 
-/**
- * Created by webdude on 30.11.15.
- */
-public class Rar implements Archiver {
+public class Rar implements ArchiverStrategy {
     @Override
-    public void compress(Content content) {
-        System.out.printf("First archive the files and sort them: %n");
-        String[] folders = content.getFolders();
-        String[] files = content.getFiles();
-
-        for (int i = 0; i < folders.length; i++) {
-            System.out.printf("archiving folder %s%n", folders[i]);
-        }
-
-        for (int i = 0; i < files.length; i++) {
-            System.out.printf("archiving file %s%n", folders[i]);
-        }
+    public CompressedFile compress(Content content) {
+        System.out.printf("Archiving using Rar: %n");
+        /* do rar specific logic here */
+        return null;
     }
 }
