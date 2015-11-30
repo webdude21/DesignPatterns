@@ -1,6 +1,6 @@
 package behavioural.templatemethod;
 
-public class Pepperoni extends Pizza{
+public class Pepperoni extends Pizza {
 
     @Override
     public void PrepareCrust() {
@@ -18,7 +18,7 @@ public class Pepperoni extends Pizza{
     }
 
     @Override
-    public void Bake(){
+    public void Bake() {
         System.out.println("Bake at 200 degrees for an 10 minutes");
     }
 }

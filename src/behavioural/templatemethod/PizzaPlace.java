@@ -13,6 +13,7 @@ public class PizzaPlace implements Demonstrator {
 
         pizzas.add(new Margarita());
         pizzas.add(new Pepperoni());
+        pizzas.add(new Bolognese());
 
         pizzas.forEach(Pizza::prepare);
     }

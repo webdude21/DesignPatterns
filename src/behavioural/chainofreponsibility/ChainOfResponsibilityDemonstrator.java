@@ -10,7 +10,6 @@ public class ChainOfResponsibilityDemonstrator implements Demonstrator {
         Approver manager = new Manager(technicalDirector, 100000);
         Approver teamLead = new TeamLead(manager, 1000);
         teamLead.ApproveOrder(new PurchaseOrder(100));
-
         teamLead.ApproveOrder(new PurchaseOrder(100000));
         teamLead.ApproveOrder(new PurchaseOrder(1000000));
     }
