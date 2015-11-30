@@ -1,6 +1,7 @@
 package com.webdude;
 
 import behavioural.chainofreponsibility.ChainOfResponsibilityDemonstrator;
+import behavioural.strategy.StrategyDemonstrator;
 import behavioural.templatemethod.PizzaPlace;
 
 import java.util.ArrayList;
@@ -13,6 +14,7 @@ public class BehaviouralDesignPatternsDemo {
 
         demonstratorList.add(new ChainOfResponsibilityDemonstrator());
         demonstratorList.add(new PizzaPlace());
+        demonstratorList.add(new StrategyDemonstrator());
 
         demonstratorList.forEach(Demonstrator::demonstrate);
     }
