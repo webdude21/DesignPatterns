@@ -2,11 +2,11 @@ package behavioural.observer;
 
 import com.webdude.Demonstrator;
 
-public class ObserverDeomonstrator implements Demonstrator {
+public class ObserverDemonstrator implements Demonstrator {
     @Override
     public void demonstrate() {
 
-        Observeble newspaper = new Newspaper();
+        Observable newspaper = new Newspaper();
 
         for (int i = 1; i < 6; i++) {
             newspaper.register(new Reader(i));

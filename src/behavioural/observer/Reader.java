@@ -4,7 +4,7 @@ public class Reader implements Observer {
 
     private int readerNumber;
 
-    Reader(int readerNumber){
+    Reader(int readerNumber) {
 
         this.readerNumber = readerNumber;
     }

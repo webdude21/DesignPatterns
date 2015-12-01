@@ -1,6 +1,6 @@
 package behavioural.observer;
 
-public interface Observeble {
+public interface Observable {
 
     void register(Observer observer);
 

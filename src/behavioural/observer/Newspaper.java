@@ -2,7 +2,7 @@ package behavioural.observer;
 
 import java.util.ArrayList;
 
-public class Newspaper implements Observeble {
+public class Newspaper implements Observable {
 
     private ArrayList<Observer> observers;
 
