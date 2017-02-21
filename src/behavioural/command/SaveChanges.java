@@ -2,7 +2,7 @@ package behavioural.command;
 
 public class SaveChanges implements Command {
 
-    boolean hasUnsavedChanges;
+    private boolean hasUnsavedChanges;
 
     @Override
     public boolean canExecute() {

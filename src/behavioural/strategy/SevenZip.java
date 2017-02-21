@@ -1,6 +1,6 @@
 package behavioural.strategy;
 
-public class SevenZip implements ArchiverStrategy {
+public class SevenZip implements ArchiveStrategy {
 
     @Override
     public CompressedFile compress(Content content) {

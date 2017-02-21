@@ -1,6 +1,6 @@
 package behavioural.strategy;
 
-public class Rar implements ArchiverStrategy {
+public class Rar implements ArchiveStrategy {
     @Override
     public CompressedFile compress(Content content) {
         System.out.printf("Archiving using Rar: %n");

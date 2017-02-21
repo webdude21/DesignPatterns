@@ -2,7 +2,7 @@ package behavioural.command;
 
 public class OpenNewFile implements Command {
 
-    boolean currentFileIsBlank = false;
+    private boolean currentFileIsBlank = false;
 
     @Override
     public boolean canExecute() {

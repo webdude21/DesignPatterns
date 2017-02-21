@@ -1,5 +1,5 @@
 package behavioural.strategy;
 
-public interface ArchiverStrategy {
+public interface ArchiveStrategy {
     CompressedFile compress(Content content);
 }

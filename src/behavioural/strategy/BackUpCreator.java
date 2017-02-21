@@ -1,28 +1,28 @@
 package behavioural.strategy;
 
-public class BackUpCreator {
+class BackUpCreator {
 
-    private ArchiverStrategy archiverStrategy;
+    private ArchiveStrategy archiveStrategy;
     private CompressedFile backup;
 
     /**
      * The backup creator uses the archive strategy to compress the content.
-     * Additional archiver strategies can be added without modifying the existing code.
+     * Additional archive strategies can be added without modifying the existing code.
      * One of the patterns that is completely unnecessary in Functional languages / or languages with first class functions.
      */
-    public BackUpCreator(ArchiverStrategy archiverStrategy) {
-        this.setArchiverStrategy(archiverStrategy);
+    BackUpCreator(ArchiveStrategy archiveStrategy) {
+        this.setArchiveStrategy(archiveStrategy);
     }
 
-    public void BackUpFolder(Content content) {
-        backup = this.getArchiverStrategy().compress(content);
+    void BackUpFolder(Content content) {
+        backup = this.getArchiveStrategy().compress(content);
     }
 
-    public ArchiverStrategy getArchiverStrategy() {
-        return archiverStrategy;
+    private ArchiveStrategy getArchiveStrategy() {
+        return archiveStrategy;
     }
 
-    public void setArchiverStrategy(ArchiverStrategy archiverStrategy) {
-        this.archiverStrategy = archiverStrategy;
+    void setArchiveStrategy(ArchiveStrategy archiveStrategy) {
+        this.archiveStrategy = archiveStrategy;
     }
 }

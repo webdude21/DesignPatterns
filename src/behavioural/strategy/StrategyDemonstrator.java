@@ -9,7 +9,7 @@ public class StrategyDemonstrator implements Demonstrator {
         SevenZip sevenZip = new SevenZip();
         BackUpCreator backUpCreator = new BackUpCreator(rarStrategy);
         backUpCreator.BackUpFolder(new Content());
-        backUpCreator.setArchiverStrategy(sevenZip);
+        backUpCreator.setArchiveStrategy(sevenZip);
         backUpCreator.BackUpFolder(new Content());
     }
 }
