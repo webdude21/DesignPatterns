@@ -1,6 +1,6 @@
 package creational.factory;
 
-public class CarFactory {
+class CarFactory {
 
     Car getCar(CarType carType) {
         switch (carType) {
