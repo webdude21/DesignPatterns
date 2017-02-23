@@ -2,9 +2,9 @@ package behavioural.command;
 
 public interface Command {
 
-    boolean canExecute();
+	boolean canExecute();
 
-    void execute();
+	void execute();
 
-    void undo();
+	void undo();
 }

@@ -2,22 +2,23 @@ package behavioural.strategy;
 
 public class Content {
 
-    private String[] files;
-    private String[] folders;
+	private String[] files;
 
-    public String[] getFiles() {
-        return files;
-    }
+	private String[] folders;
 
-    public void setFiles(String[] files) {
-        this.files = files;
-    }
+	public String[] getFiles() {
+		return files;
+	}
 
-    public String[] getFolders() {
-        return folders;
-    }
+	public void setFiles(String[] files) {
+		this.files = files;
+	}
 
-    public void setFolders(String[] folders) {
-        this.folders = folders;
-    }
+	public String[] getFolders() {
+		return folders;
+	}
+
+	public void setFolders(String[] folders) {
+		this.folders = folders;
+	}
 }

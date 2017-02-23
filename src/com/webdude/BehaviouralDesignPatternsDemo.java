@@ -10,14 +10,14 @@ import java.util.List;
 
 public class BehaviouralDesignPatternsDemo {
 
-    public static void main(String[] args) {
-        List<Demonstrator> demonstratorList = new ArrayList<>();
+	public static void main(String[] args) {
+		List<Demonstrator> demonstratorList = new ArrayList<>();
 
-        demonstratorList.add(new ChainOfResponsibilityDemonstrator());
-        demonstratorList.add(new PizzaPlace());
-        demonstratorList.add(new StrategyDemonstrator());
-        demonstratorList.add(new ObserverDemonstrator());
+		demonstratorList.add(new ChainOfResponsibilityDemonstrator());
+		demonstratorList.add(new PizzaPlace());
+		demonstratorList.add(new StrategyDemonstrator());
+		demonstratorList.add(new ObserverDemonstrator());
 
-        demonstratorList.forEach(Demonstrator::demonstrate);
-    }
+		demonstratorList.forEach(Demonstrator::demonstrate);
+	}
 }

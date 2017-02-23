@@ -2,16 +2,16 @@ package creational.singleton;
 
 public class LazyLoadingSingleton {
 
-    private static LazyLoadingSingleton instance;
+	private static LazyLoadingSingleton instance;
 
-    private LazyLoadingSingleton() {
-    }
+	private LazyLoadingSingleton() {
+	}
 
-    public static LazyLoadingSingleton getInstance() {
-        if (instance == null){
-            instance = new LazyLoadingSingleton();
-        }
+	public static LazyLoadingSingleton getInstance() {
+		if (instance == null) {
+			instance = new LazyLoadingSingleton();
+		}
 
-        return instance;
-    }
+		return instance;
+	}
 }

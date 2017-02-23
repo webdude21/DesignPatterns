@@ -6,15 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PizzaPlace implements Demonstrator {
-    @Override
-    public void demonstrate() {
-        System.out.println("Started using the pizza");
-        List<Pizza> pizzas = new ArrayList<>();
+	@Override
+	public void demonstrate() {
+		System.out.println("Started using the pizza");
+		List<Pizza> pizzas = new ArrayList<>();
 
-        pizzas.add(new Margarita());
-        pizzas.add(new Pepperoni());
-        pizzas.add(new Bolognese());
+		pizzas.add(new Margarita());
+		pizzas.add(new Pepperoni());
+		pizzas.add(new Bolognese());
 
-        pizzas.forEach(Pizza::prepare);
-    }
+		pizzas.forEach(Pizza::prepare);
+	}
 }

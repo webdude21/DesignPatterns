@@ -3,17 +3,16 @@ package creational.abstractfactory;
 import creational.factory.Car;
 import creational.factory.CarType;
 
-class AudiFactory extends CarFactory {
-
+public class BmwFactory extends CarFactory {
 	@Override
 	public Car getCar(CarType carType) {
 		switch (carType) {
 			case ESTATE:
-				return new AudiEstateCar();
+				return new BmwEstateCar();
 			case SPORT:
-				return new AudiSportsCar();
+				return new BmwSportsCar();
 			case COMPACT:
-				return new AudiCompactCar();
+				return new BmwCompactCar();
 			default:
 				return null;
 		}

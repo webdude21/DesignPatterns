@@ -1,15 +1,16 @@
 package creational.abstractfactory;
 
 import creational.factory.Car;
+import creational.factory.CarType;
 
 abstract class CarFactory {
 
-	public static CarFactory getCarFactory(Manufacturer manufacturer) {
+	static CarFactory getCarFactory(Manufacturer manufacturer) {
 		switch (manufacturer) {
 			case AUDI:
 				return new AudiFactory();
 			case BMW:
-				return new BwwFactory();
+				return new BmwFactory();
 			case MERCEDES:
 				return new MercedesFactory();
 			default:
@@ -17,5 +18,5 @@ abstract class CarFactory {
 		}
 	}
 
-	public abstract Car getCar();
+	public abstract Car getCar(CarType carType);
 }

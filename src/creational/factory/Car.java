@@ -2,45 +2,49 @@ package creational.factory;
 
 public abstract class Car {
 
-    int topSpeed;
-    int cargoSpace;
-    int acceleration;
-    int looks;
-    int economy;
+	int topSpeed;
 
-    Car() {
-        this.createCar();
-    }
+	int cargoSpace;
 
-    public int getTopSpeed() {
-        return topSpeed;
-    }
+	int acceleration;
 
-    public int getCargoSpace() {
-        return cargoSpace;
-    }
+	int looks;
 
-    public int getAcceleration() {
-        return acceleration;
-    }
+	int economy;
 
-    public int getLooks() {
-        return looks;
-    }
+	Car() {
+		this.createCar();
+	}
 
-    public int getEconomy() {
-        return economy;
-    }
+	public int getTopSpeed() {
+		return topSpeed;
+	}
 
-    public abstract void createCar();
+	public int getCargoSpace() {
+		return cargoSpace;
+	}
 
-    @Override
-    public String toString() {
-        return this.getClass().getSimpleName() + " {" +
-                "topSpeed=" + topSpeed +
-                ", cargoSpace=" + cargoSpace +
-                ", acceleration=" + acceleration +
-                ", looks=" + looks +
-                '}';
-    }
+	public int getAcceleration() {
+		return acceleration;
+	}
+
+	public int getLooks() {
+		return looks;
+	}
+
+	public int getEconomy() {
+		return economy;
+	}
+
+	public abstract void createCar();
+
+	@Override
+	public String toString() {
+		return this.getClass().getSimpleName() + " {" +
+				"topSpeed=" + topSpeed +
+				", cargoSpace=" + cargoSpace +
+				", acceleration=" + acceleration +
+				", looks=" + looks +
+				'}';
+	}
 }
