@@ -2,22 +2,22 @@ package behavioural.templatemethod;
 
 public abstract class Pizza {
 
-	public abstract void PrepareCrust();
+	public abstract void prepareCrust();
 
-	public abstract void PrepareMainFilling();
+	public abstract void prepareMainFilling();
 
-	public abstract void PrepareTopping();
+	public abstract void prepareTopping();
 
-	public void Bake() {
-		System.out.println("Bake at 250 degrees for an 12 minutes");
+	public void bake() {
+		System.out.println("bake at 250 degrees for an 12 minutes");
 	}
 
 	public Pizza prepare() {
 		System.out.printf("Preparing %s pizza!!!%n", getClass().getSimpleName());
-		PrepareCrust();
-		PrepareMainFilling();
-		PrepareTopping();
-		Bake();
+		prepareCrust();
+		prepareMainFilling();
+		prepareTopping();
+		bake();
 		return this;
 	}
 }
